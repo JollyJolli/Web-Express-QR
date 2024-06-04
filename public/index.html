@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Generador de Códigos QR</h1>
+    <form id="qr-form">
+        <label for="url">Introduce la URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Generar Código QR</button>
+    </form>
+    <div id="qr-result" style="display:none;">
+        <h2>Código QR generado:</h2>
+        <img id="qr-image" src="" alt="Código QR">
+        <a id="download-link" href="#" download="qrcode.png">Descargar Código QR</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
